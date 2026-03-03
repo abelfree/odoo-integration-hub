@@ -35,9 +35,4 @@ This project provides a connector job model with retry/backoff mechanics and a m
 - How to separate connector domain logic from transport implementation.
 
 
-## Screenshots
-
-![Project Screenshot](assets/screenshots/placeholder.svg)
-
-Replace ssets/screenshots/placeholder.svg with real screenshots from your Odoo demo environment.
 
