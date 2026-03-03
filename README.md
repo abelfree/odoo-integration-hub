@@ -1,5 +1,11 @@
 ﻿# Odoo Integration Hub
 
+[![Odoo](https://img.shields.io/badge/Odoo-16%2B-5E2750)](https://www.odoo.com/)
+[![License: LGPL-3.0](https://img.shields.io/badge/License-LGPL--3.0-blue.svg)](./LICENSE)
+[![Status](https://img.shields.io/badge/Status-Portfolio_Ready-brightgreen)](#)
+[![Last Commit](https://img.shields.io/github/last-commit/abelfree/odoo-integration-hub)](https://github.com/abelfree/odoo-integration-hub/commits/master)
+
+
 ## Problem
 Odoo ecosystems often depend on external payments, messaging, and analytics services. Network errors and dependency outages can cause silent data loss without strong retry and failure tracking patterns.
 
@@ -27,3 +33,11 @@ This project provides a connector job model with retry/backoff mechanics and a m
 - How retry policy protects business operations during transient outages.
 - Why explicit failed-state handling reduces MTTR.
 - How to separate connector domain logic from transport implementation.
+
+
+## Screenshots
+
+![Project Screenshot](assets/screenshots/placeholder.svg)
+
+Replace ssets/screenshots/placeholder.svg with real screenshots from your Odoo demo environment.
+
