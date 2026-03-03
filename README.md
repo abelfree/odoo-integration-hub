@@ -1,8 +1,29 @@
 ﻿# Odoo Integration Hub
 
-Demonstrates resilient connector patterns for external systems.
+## Problem
+Odoo ecosystems often depend on external payments, messaging, and analytics services. Network errors and dependency outages can cause silent data loss without strong retry and failure tracking patterns.
 
-## Highlights
-- Retry with backoff
-- Failure tracking model
-- Mock endpoint server
+## Solution
+This project provides a connector job model with retry/backoff mechanics and a mock integration server for demonstrations.
+
+## What It Demonstrates
+- Connector job state management (`pending`, `done`, `failed`)
+- Exponential backoff retry strategy
+- Operational runbook for support teams
+- Local mock HTTP endpoints for demos
+
+## Architecture
+- `addons/integration_hub/models/connector_job.py`
+- `scripts/mock_endpoints.py`
+- `docs/operational_runbook.md`
+
+## Demo Flow
+1. Start mock server: `python scripts/mock_endpoints.py`.
+2. Create connector jobs in Odoo.
+3. Execute retry-capable sender workflow.
+4. Review retries and terminal states for observability.
+
+## Portfolio Talking Points
+- How retry policy protects business operations during transient outages.
+- Why explicit failed-state handling reduces MTTR.
+- How to separate connector domain logic from transport implementation.
